@@ -1,6 +1,7 @@
 
 #Computation of a permutation test.The goal is to test whether the observed difference
 #between the treatment and the control samples is really significative.
+#Go to https://www.youtube.com/watch?v=GmvpsJHGCxQ for more details
 
 observed.treatment.sample <- c(19,22,25,26) #the observed scores for the treatment group
 observed.control.sample <- c(23,33,40) #the observed scores for the control group
