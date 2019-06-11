@@ -34,5 +34,5 @@ p.value = sum((observed.mean.difference >= random.mean.differences) == TRUE) / l
 p.value
 
 #In the sample studied, the chance of having the observed difference (9) or greater is below the thresold of 0.05.
-#Threfore, we cannot conclude that the treatment have a significative effect on our treatment group.
+#Therefore, we cannot conclude that the treatment have a significative effect on our treatment group.
 
