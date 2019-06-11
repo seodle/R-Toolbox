@@ -1,4 +1,5 @@
 
+
 #Computation of a permutation test.The goal is to test whether the observed difference
 #between the treatment and the control samples is really significative.
 #See https://www.youtube.com/watch?v=GmvpsJHGCxQ for more details
@@ -27,12 +28,16 @@ for (i in 1:10000) { #compute 10000 times random differences in the whole sample
   
 }
 
-#We then compute how many times our observed difference is equal or greater than a random difference.
+#histogram
+hist(random.mean.differences, main = "", xlab = "Sample Means", prob = F, col = "darkred")
+abline(v = observed.mean.difference, col = "blue", lwd = 2)
 
-#percentage of occurrences superior or equal to observed mean difference
-p.value = sum((observed.mean.difference >= random.mean.differences) == TRUE) / length(random.mean.differences)
-p.value
+#Compute how many times our observed difference is equal or greater than a random difference.
+p.value.ot <- sum(random.mean.differences < observed.mean.difference) / length(random.mean.differences)
+p.value.tt <- sum(abs(random.mean.differences) < abs(observed.mean.difference)) / length(random.mean.differences)
+
+p.value.ot #one-tailed
+p.value.tt #two-tailed
 
 #In the sample studied, the chance of having the observed difference (9) or greater is below the thresold of 0.05.
-#Therefore, we cannot conclude that the treatment have a significative effect on our treatment group.
-
+#Threfore, we cannot conclude that the treatment have a significative effect on our treatment group.
