@@ -1,5 +1,3 @@
-
-
 #Computation of a permutation test.The goal is to test whether the observed difference
 #between the treatment and the control samples is really significative.
 #See https://www.youtube.com/watch?v=GmvpsJHGCxQ for more details
