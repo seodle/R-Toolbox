@@ -7,7 +7,7 @@ observed.treatment.sample <- c(19,22,25,26) #the observed scores for the treatme
 observed.control.sample <- c(23,33,40) #the observed scores for the control group
 
 observed.mean.difference <- mean(observed.treatment.sample) - mean(observed.control.sample)
-observed.mean.difference #the mean difference between our two observed groups
+observed.mean.difference #the mean difference between the two observed groups
 
 #Is this difference significative or due to chance?
 
