@@ -28,7 +28,7 @@ for (i in 1:10000) { #compute 10000 times random differences in the whole sample
 
 #histogram
 hist(random.mean.differences, main = "", xlab = "Sample Means", prob = F, col = "darkred")
-abline(v = observed.mean.difference, col = "blue", lwd = 2)
+abline(v = observed.mean.difference, col = "blue", lwd = 2) #the observed value on the histogram
 
 #Compute how many times our observed difference is equal or greater than a random difference.
 p.value.ot <- sum(random.mean.differences < observed.mean.difference) / length(random.mean.differences)
